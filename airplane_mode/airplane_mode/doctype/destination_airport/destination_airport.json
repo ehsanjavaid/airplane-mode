@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{destination_airport}-{destination_airport_code}-{###}",
+ "creation": "2025-02-25 10:48:05.616259",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "destination_airport",
+  "city",
+  "column_break_zwfh",
+  "destination_airport_code",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "destination_airport",
+   "fieldtype": "Data",
+   "label": "Destination Airport"
+  },
+  {
+   "fieldname": "column_break_zwfh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination_airport_code",
+   "fieldtype": "Data",
+   "label": "Destination Airport Code"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-25 11:08:30.922694",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Destination Airport",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

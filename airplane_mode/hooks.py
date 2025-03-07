@@ -241,4 +241,16 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+doc_events = {
+    "Airplane Ticket": {
+        "before_submit": "airplane_mode.airplane_ticket_hooks.prevent_submission"
+    }
+}
+# hooks.py
+website_routes = [
+    {"doctype": "Airplane Flight", "path": "flight"}
+]
 
+web_pages = [
+    {"doctype": "Web Page", "path": "flights"}
+]

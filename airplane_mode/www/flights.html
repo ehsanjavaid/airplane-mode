@@ -1,0 +1,26 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="container">
+    <h1>Available Flights</h1>
+    <div class="row">
+        {% for flight in flights %}
+        <div class="col-sm-12 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{ flight.source_airport_code }} → {{ flight.destination_airport_code }}
+                    </h5>
+                    <p class="mb-1">
+                        Departure: {{ frappe.format_date(flight.date_of_departure) }} 
+                        at {{ frappe.utils.format_time(flight.time_of_departure) }}
+                    </p>
+                    <p class="mb-1">Duration: {{ flight.duration }} hours</p>
+                    <a href="{{ flight.route }}" class="btn btn-primary">View Flight</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

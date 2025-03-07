@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{airline}-{###}",
+ "creation": "2025-02-22 10:35:27.373659",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "airline",
+  "headquarters",
+  "column_break_loid",
+  "founding_year",
+  "custom_care_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "founding_year",
+   "fieldtype": "Int",
+   "label": "Founding Year",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "headquarters",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Headquarters",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_care_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Custom Care Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_loid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "airline",
+   "fieldtype": "Data",
+   "label": "Airline"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Airplane",
+   "link_fieldname": "airline"
+  }
+ ],
+ "modified": "2025-02-24 14:27:38.529620",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Airline",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

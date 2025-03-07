@@ -1,0 +1,30 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Flight {{ doc.name }}</h1>
+            <dl class="row">
+                <dt class="col-sm-3">Departure</dt>
+                <dd class="col-sm-9">
+                    {{ frappe.format_date(doc.date_of_departure) }} 
+                    at {{ frappe.utils.format_time(doc.time_of_departure) }}
+                </dd>
+
+                <dt class="col-sm-3">Route</dt>
+                <dd class="col-sm-9">
+                    {{ doc.source_airport_code }} → {{ doc.destination_airport_code }}
+                </dd>
+
+                <dt class="col-sm-3">Duration</dt>
+                <dd class="col-sm-9">{{ doc.duration }} hours</dd>
+            </dl>
+
+            <a href="/book-flight?flight={{ doc.name }}" class="btn btn-primary">
+                Book Flight
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

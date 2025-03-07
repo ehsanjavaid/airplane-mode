@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{source_airport}-{source_airport_code}-{###}",
+ "creation": "2025-02-25 10:43:50.515023",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_airport",
+  "city",
+  "column_break_cimz",
+  "source_airport_code",
+  "country"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_airport",
+   "fieldtype": "Data",
+   "label": "Source Airport"
+  },
+  {
+   "fieldname": "column_break_cimz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_airport_code",
+   "fieldtype": "Data",
+   "label": "Source Airport Code"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-25 11:10:28.411474",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Source Airport",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
